@@ -1,11 +1,11 @@
-function Sprite(x, y, largura, altura) {
+function Sprite(x, y, width, height) {
 	this.x = x;
 	this.y = y;
-	this.largura = largura;
-	this.altura = altura;
+	this.width = width;
+	this.height = height;
 
 	this.print = function(xCanvas, yCanvas) {
-		context.drawImage(img, this.x, this.y, this.largura, this.altura, xCanvas, yCanvas, this.largura, this.altura);
+		context.drawImage(img, this.x, this.y, this.width, this.altura, xCanvas, yCanvas, this.width, this.height);
 	}
 }
 
